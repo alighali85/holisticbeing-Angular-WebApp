@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { Route } from ' react-router-dom';
+import { Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
+import Login from './components/pages/Login';
+import RegisterPage from './components/pages/RegisterPage';
 
-class App extends Component {
-  render() {
-    return (
 
-     <Route  path="/" exact component="HomePage" />
-    );
-  }
-}
+
+
+const App= () => <div>
+  here is the app
+     <Route  path="/" exact component={HomePage} />
+     <Route  path="/login" exact component={Login}/>
+     <Route  path="/login/register" exact component={RegisterPage}/>
+  </div>  
 
 export default App;

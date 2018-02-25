@@ -1,7 +1,13 @@
-import React from 'react-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Login from './Login'
 
-const HomePage = (prop) => (
-    <div> Home page works !</div>
+const HomePage = () => (
+    <div class="ui container"> 
+
+        Home page works !
+    <Link to="/login"> Login </Link>
+    </div>
 
 );
 
